@@ -1,4 +1,4 @@
-const { UserMethods } = require('../model/user');
+const { UserMethods } = require("../model/user");
 
 module.exports = {
   create(request, response) {
@@ -10,7 +10,7 @@ module.exports = {
     } catch (error) {
       console.log(error);
       return response.json({
-        error: error.message || 'Could not create an user',
+        error: error.message || "Could not create an user",
       });
     }
   },
@@ -22,7 +22,7 @@ module.exports = {
       UserMethods.createMany(users);
     } catch (error) {
       return response.json({
-        error: error.message || 'Could not create an user',
+        error: error.message || "Could not create an user",
       });
     }
     return response.sendStatus(201);
@@ -35,7 +35,7 @@ module.exports = {
       UserMethods.delete(id);
     } catch (error) {
       return response.json({
-        error: error.message || 'Could not delete the user',
+        error: error.message || "Could not delete the user",
       });
     }
   },
@@ -53,7 +53,7 @@ module.exports = {
       return response.sendStatus(200);
     } catch (error) {
       return response.json({
-        error: error.message || 'Could not delete many users',
+        error: error.message || "Could not delete many users",
       });
     }
   },
@@ -68,7 +68,7 @@ module.exports = {
     } catch (error) {
       console.log(error);
       return response.json({
-        error: error.message || 'Could not update the user',
+        error: error.message || "Could not update the user",
       });
     }
   },
@@ -88,7 +88,19 @@ module.exports = {
       return response.json(user);
     } catch (error) {
       return response.json({
-        error: error.message || 'Could not authenticate the user',
+        error: error.message || "Could not authenticate the user",
+      });
+    }
+  },
+  search(request, response) {
+    const { condition } = request.body;
+
+    try {
+      const users = UserMethods.search(condition);
+      return response.json(users);
+    } catch (error) {
+      return response.json({
+        error: error.message || "Could not search the users",
       });
     }
   },
