@@ -1,0 +1,271 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2021-06-28T01:25:05.623Z",
+  "__export_source": "insomnia.desktop.app:v2021.3.0",
+  "resources": [
+    {
+      "_id": "req_53ba7589b1ea4392993e48a6902ad71c",
+      "parentId": "wrk_f88f6874046d46c2a2304632eec44372",
+      "modified": 1624843421882,
+      "created": 1624841990188,
+      "url": "http://localhost:3000/search",
+      "name": "Search Users",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"condition\": \"Fernando\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_5265657e5d244e98984c0d176a0ffba6"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1624841990188,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_f88f6874046d46c2a2304632eec44372",
+      "parentId": null,
+      "modified": 1624824212815,
+      "created": 1624824212815,
+      "name": "Insomnia",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_366046b38c8446d4b922607f740198c3",
+      "parentId": "wrk_f88f6874046d46c2a2304632eec44372",
+      "modified": 1624843457060,
+      "created": 1624835295161,
+      "url": "http://localhost:3000/create/many",
+      "name": "Create Many",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "[\n\t{\n\t\t\"name\": \"Fernando\",\n\t\t\"email\": \"fernadorfigueiredotec@gmail.com\",\n\t\t\"password\": \"senhateste1\"\n\t},\n\t{\n\t\t\"name\": \"Arthur\",\n\t\t\"email\": \"arthuraguiar@gmail.com\",\n\t\t\"password\": \"senhateste2\"\n\t},\n\t{\n\t\t\"name\": \"Pedro\",\n\t\t\"email\": \"pedromartings@gmail.com\",\n\t\t\"password\": \"senhateste3\"\n\t},\n\t{\n\t\t\"name\": \"Penguim\",\n\t\t\"email\": \"penguim@gmail.com\",\n\t\t\"password\": \"senhateste4\"\n\t},\n\t{\n\t\t\"name\": \"Diego\",\n\t\t\"email\": \"diego3g@rocketseat.com\",\n\t\t\"password\": \"senhateste5\"\n\t},\n\t{\n\t\t\"name\": \"Mayk Brito\",\n\t\t\"email\": \"penguim@gmail.com\",\n\t\t\"password\": \"senhateste4\"\n\t}\n]"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_b14ef181eb934d0ea2621ade3330f82b"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1624838768764,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_59227efb9ff747c18274853607aa3b76",
+      "parentId": "wrk_f88f6874046d46c2a2304632eec44372",
+      "modified": 1624843408553,
+      "created": 1624835547340,
+      "url": "http://localhost:3000/delete/many",
+      "name": "Delete Many",
+      "description": "",
+      "method": "DELETE",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"minRange\": 1,\n\t\"maxRange\": 10\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_2813de58b6c54c94b041a40ec5e21928"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1624835547340,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_348c476fe8be4764b38a5f05baa02bd1",
+      "parentId": "wrk_f88f6874046d46c2a2304632eec44372",
+      "modified": 1624843403947,
+      "created": 1624832100182,
+      "url": "http://localhost:3000/login",
+      "name": "Login",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"fernadorfigueiredotec@gmail.com\",\n\t\"password\": \"senhatesteboa2\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_1cb75b4454884ef88e6f08451c08a4aa"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1624832100182,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_12d07b8eaa6d4017a4ab140ef545d7da",
+      "parentId": "wrk_f88f6874046d46c2a2304632eec44372",
+      "modified": 1624843397901,
+      "created": 1624831945814,
+      "url": "http://localhost:3000/28ab932c-8107-433f-b843-d7fed6c35707",
+      "name": "Update User",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Fernando\",\n\t\"email\": \"fernadorfigueiredotec@gmail.com\",\n\t\"password\": \"senhatestaboa2\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_3eba03fe6ced460fa13159c3b5fb8213"
+        },
+        {
+          "name": "",
+          "value": "",
+          "description": "",
+          "id": "pair_d2a099b49e8143068e6d169f33a8e368"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1624831945814,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_9f72bd141dcb4e63b60bb981e99c18e7",
+      "parentId": "wrk_f88f6874046d46c2a2304632eec44372",
+      "modified": 1624825587744,
+      "created": 1624825544573,
+      "url": "http://localhost:3000/",
+      "name": "Get users",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1624825544573,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_0e16f811cf194684a096a626e1af1308",
+      "parentId": "wrk_f88f6874046d46c2a2304632eec44372",
+      "modified": 1624843390067,
+      "created": 1624824421876,
+      "url": "http://localhost:3000/",
+      "name": "Create User",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Fernando\",\n\t\"email\": \"fernadorfigueiredotec@gmail.com\",\n\t\"password\": \"senhatesteboa\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_4e7fea8392ac4814824e6fe3fa992802"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1624824421876,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_c2db6e6a3803fb775d1ef10ddb3dfa1124dc8e04",
+      "parentId": "wrk_f88f6874046d46c2a2304632eec44372",
+      "modified": 1624824212880,
+      "created": 1624824212880,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1624824212880,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_c2db6e6a3803fb775d1ef10ddb3dfa1124dc8e04",
+      "parentId": "wrk_f88f6874046d46c2a2304632eec44372",
+      "modified": 1624824212883,
+      "created": 1624824212883,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_e70cb3c278d945c199ebdecf4a755bef",
+      "parentId": "wrk_f88f6874046d46c2a2304632eec44372",
+      "modified": 1624824212816,
+      "created": 1624824212816,
+      "fileName": "Insomnia",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
